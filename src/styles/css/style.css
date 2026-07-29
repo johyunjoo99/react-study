@@ -1,0 +1,183 @@
+/*  ===== Variables & Mixins ===== */
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url("//fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&subset=korean");
+/* font-family: 'Pretendard', sans-serif; */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+/* ===== SCSS Variables ===== */
+/* Font */
+/* Color */
+/* Line Height */
+/* Media Query */
+/* ===== CSS Variables ===== */
+:root {
+  /* Viewport */
+  --vh: 100%;
+  --resizeVH: 100vh;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  :root {
+    /* Layout */
+    --resizeVH: var(--vh);
+  }
+}
+/*  ===== Variables & Mixins ===== */
+/* ===== Media Query ===== */
+/* Max Width */
+/* Max Height */
+/* Hover */
+/* Hover + Max Width */
+/* ===== Position ===== */
+/* ===== Background Image ===== */
+/* ===== Ellipsis ===== */
+/* ===== Base ===== */
+/*  ===== Variables & Mixins ===== */
+/* ===== common ===== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", "verdana", sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+body * {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+/* ===== a ===== */
+a,
+a:link,
+a:active,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+a {
+  outline: none;
+}
+
+/* ===== img ===== */
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+/* ===== form ===== */
+select,
+input,
+textarea {
+  outline: none;
+}
+
+select,
+input {
+  vertical-align: middle;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ===== list ===== */
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+/* ===== table ===== */
+table {
+  width: 100%;
+  border: 0;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ===== Common ===== */
+/*  ===== Variables & Mixins ===== */
+.dashboard {
+  padding: 20px;
+}
+.dashboard table {
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  border-collapse: collapse;
+}
+.dashboard table colgroup col.no {
+  width: 100px;
+}
+.dashboard table tr > *:first-child {
+  border-left-color: transparent;
+}
+.dashboard table tr > *:last-child {
+  border-right-color: transparent;
+}
+.dashboard table th,
+.dashboard table td {
+  padding: 10px 15px;
+  border: 1px solid #AFABA3;
+}
+.dashboard table thead tr {
+  background: #3B3A33;
+}
+.dashboard table thead th {
+  font-weight: 600;
+  color: #FFF;
+}
+.dashboard table tbody td a {
+  display: block;
+  padding: 10px;
+  color: blue;
+  text-align: left;
+  text-decoration: underline;
+  margin: -10px;
+}
+
+.example {
+  padding: 20px;
+}
+.example h1 {
+  font-size: 20px;
+}
+.example .example-code {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #AFABA3;
+  border-bottom: 1px solid #AFABA3;
+  white-space: pre-wrap;
+  margin: 20px 0 27px;
+}
+.example .example-code code {
+  display: block;
+}
+.example .back {
+  display: inline-flex;
+  background: #3B3A33;
+  font-size: 17px;
+  font-weight: 500;
+  color: #FFF;
+  padding: 10px 20px;
+}
+.example .back span {
+  display: inline-block;
+  margin-left: 10px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전개 연산자 (Spread)</title>
+
+    <link rel="stylesheet" href="../../src/styles/css/style.css">
+</head>
+<body>
+    <div class="example">
+        <h1>03. 전개 연산자 (Spread)</h1>
+
+        <!-- 코드 출력 영역 -->
+        <pre class="example-code">
+            <code id="codeView"></code>
+        </pre>
+
+        <a href="./index.html" class="back">목록으로 이동<span>→</span></a>
+    </div>
+    <script id="exampleCode">       
+        let person = { name: "현주", age: 28 }
+        let person2 = { ...person }
+        let person3 = person
+
+        // 객체를 복사해서 가져오는 것으로 person과 다른 객체임
+        console.log("person2: ", person2, ", ", person==person2)
+
+        // 객체를 그대로 가져오는 것으로 person과 같은 객체임
+        console.log("person3: ", person3, ", ", person==person3)
+
+
+        // 배열
+        let a = [1, 2]
+        let b = [...a, 3]
+        console.log("array b: ", b);
+
+        let c = [...a, ...b]
+        console.log("array c: ", c);
+    </script>
+    <script src="./js/code_view.js"></script>
+</body>
+</html>

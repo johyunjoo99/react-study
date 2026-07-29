@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼항 연산자 (Ternary Operator)</title>
+
+    <link rel="stylesheet" href="../../src/styles/css/style.css">
+</head>
+<body>
+    <div class="example">
+        <h1>04. 삼항 연산자 (Ternary Operator)</h1>
+
+        <!-- 코드 출력 영역 -->
+        <pre class="example-code">
+            <code id="codeView"></code>
+        </pre>
+
+        <a href="./index.html" class="back">목록으로 이동<span>→</span></a>
+    </div>
+    <script id="exampleCode">
+        let person = { name: "현주", age: 17 }
+        // let person = null
+
+        if(person){
+            console.log(person.name);
+        }else{
+            console.log("there is no person");
+        }
+
+        // person이 있다면 person.name을 불러오고 없다면 "there is no person"을 console창에 넣어줌
+        // (condition ? trueValue : falseValue)
+        console.log(person ? person.name: "there is no person");
+    </script>
+    <script src="./js/code_view.js"></script>
+</body>
+</html>

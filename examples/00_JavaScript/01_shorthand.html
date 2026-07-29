@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>단축 속성 (Shorthand)</title>
+
+    <link rel="stylesheet" href="../../src/styles/css/style.css">
+</head>
+<body>
+    <div class="example">
+        <h1>01. 단축 속성 (Shorthand)</h1>
+
+        <!-- 코드 출력 영역 -->
+        <pre class="example-code">
+            <code id="codeView"></code>
+        </pre>
+
+        <a href="./index.html" class="back">목록으로 이동<span>→</span></a>
+    </div>
+    <script id="exampleCode">
+        // key와 value가 같다면 생략해서 작성 가능
+        // 다르다면 생략 불가
+
+        let name = "현주"
+        let age = "28"
+
+        let person = {
+            name: name, // key: value
+            age: age
+        }
+
+        let person2 = {
+            name,
+            age
+        }
+
+        console.log("person: ", person, "/ person2: ", person2);
+    </script>
+    <script src="./js/code_view.js"></script>
+</body>
+</html>
