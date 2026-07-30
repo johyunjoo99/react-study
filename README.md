@@ -1,16 +1,22 @@
-# React + Vite
+# React Study
+React 학습 과정과 예제 코드를 정리한 저장소입니다.
+React 개발에 필요한 JavaScript ES6+ 문법과 컴포넌트 기반 개발 방식을 학습합니다.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Learning Log
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 2026.07.29
+** JavaSCript ES6+ 기본 문법 학습 **
 
-## React Compiler
+- 단축 속성 (Shorthand)
+- 구조 분해 할당 (Destructuring)
+- 전개 연산자 (Spread)
+- 삼항 연산자 (Ternary Operater)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 2026.07.30
+** React 기본 문법 학습 **
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- JSX 문법
+- 컴포넌트 생성
+- Props 전달
+- 이벤트 처리 ('OnClick')
