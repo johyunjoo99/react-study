@@ -3,6 +3,7 @@ React 학습 과정과 예제 코드를 정리한 저장소입니다.
 React 개발에 필요한 JavaScript ES6+ 문법과 컴포넌트 기반 개발 방식을 학습합니다.
 
 
+
 ## Learning Log
 
 ### 2026.07.29
@@ -13,6 +14,7 @@ React 개발에 필요한 JavaScript ES6+ 문법과 컴포넌트 기반 개발 �
 - 전개 연산자 (Spread)
 - 삼항 연산자 (Ternary Operater)
 
+
 ### 2026.07.30
 ** React 기본 문법 학습 **
 
@@ -20,3 +22,11 @@ React 개발에 필요한 JavaScript ES6+ 문법과 컴포넌트 기반 개발 �
 - 컴포넌트 생성
 - Props 전달
 - 이벤트 처리 ('OnClick')
+
+
+** React State 학습 **
+
+- useState() 사용 방법
+- 일반 변수와 state의 차이
+- state 값 변경 및 화면 반영
+- setState 실행 후 값 적용 시점 확인
