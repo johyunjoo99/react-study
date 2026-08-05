@@ -30,3 +30,16 @@ React 개발에 필요한 JavaScript ES6+ 문법과 컴포넌트 기반 개발 �
 - 일반 변수와 state의 차이
 - state 값 변경 및 화면 반영
 - setState 실행 후 값 적용 시점 확인
+
+
+### 2026.08.05
+** React Todo List 프로젝트 **
+
+- Todo List 컴포넌트 분리 (App / TodoBoard / TodoITem)
+- Props를 이용한 부모 → 자식 데이터 전달
+- map()을 이용한 리스트 렌더링
+- useState를 활용한 Todo 목록 관리
+- 전개 연산자 (...)를 이용한 배열 추가
+- filter()를 이용한 Todo 삭제 기능 구현
+- key 속성의 역할 및 사용 방법
+- React의 단방향 데이터 흐름 이해
