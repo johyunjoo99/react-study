@@ -1,0 +1,74 @@
+@use "./styles/variables" as *;
+@use "./styles/mixins" as *;
+
+main{
+    max-width: 1000px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+input,
+button{
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    outline: none;
+}
+
+.form-box{
+    display: flex;
+    margin-bottom: 40px;
+
+    input{
+        flex: 1 1 auto;
+        min-width: 0;
+        height: 50px;
+        background: #E5E5E5;
+        border: none;
+        padding: 0 15px;
+
+        &::placeholder{
+            color: #AAA;
+        }
+    }
+
+    button{
+        flex-shrink: 0;
+        margin-left: 10px;
+        background: $color-text;
+        border: none;
+        font-weight: 600;
+        color: #FFF;
+        padding: 0 30px;
+    }
+}
+
+.todo-board{
+    h1{
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .todo-item{
+        display: flex;
+        border: 2px solid #E5E5E5;
+        padding: 5px;
+
+        & + .todo-item{
+            margin-top: 10px;
+        }
+
+        p{
+            flex: 1 1 auto;
+            min-width: 0;
+            min-height: calc($line-height + 20px);
+            padding: 10px 15px;
+        }
+
+        button{
+            background: #E5E5E5;
+            border: none;
+            color: #AAA;
+            padding: 0 25px;
+        }
+    }
+}

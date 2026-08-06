@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 함수 (Array Function)</title>
+
+    <link rel="stylesheet" href="../../src/styles/css/style.css">
+</head>
+<body>
+    <div class="example">
+        <h1>05. 배열 함수 (Array Function)</h1>
+
+        <!-- 코드 출력 영역 -->
+        <pre class="example-code">
+            <code id="codeView"></code>
+        </pre>
+
+        <a href="./index.html" class="back">목록으로 이동<span>→</span></a>
+    </div>
+    <script id="exampleCode">
+        let names = [
+            "Steven Paul Jobs",
+            "Bill Gates",
+            "Mark Elliot Zuckerberg",
+            "Elon Musk",
+            "Jeff Bezos",
+            "Warren Edward Buffett",
+            "Larry Page",
+            "Larry Ellison",
+            "Tim Cook",
+            "Lloyd Blankfein",
+        ];
+
+        let ceoList = [
+            {name: "Larry Page", age: 23, ceo: true},
+            {name: "Tim Cook", age: 40, ceo: true},
+            {name: "Elon Musk", age: 55, ceo: false}
+        ]
+
+
+        // 01. forEach
+        // - 함수를 매개변수로 담아 사용 가능함
+        // - for문보다 더욱 간결하게 사용 가능
+        names.forEach((item, index) => {
+            console.log("forEach(): ", item, index);
+        });
+
+
+        // 02. map
+        // - 변수를 사용해 담을 수 있음
+        // - 반드시 배열을 반환함 (즉, return을 해줘야 함)
+        let dataMap = names.map((item) => {
+            return item
+        })
+        console.log("map(): ", dataMap);
+
+
+        // 03. filter
+        // - 변수를 사용해 담을 수 있음
+        // - 조건을 넣고 그 값이 true인 것만 배열로 반환함
+        let dataFilter = names.filter((item) => {
+            return item.startsWith("L");
+        })
+
+        let dataFilter2 = names.filter((item) => {
+            return item.startsWith("A");
+        })
+
+        console.log("filter(): ", dataFilter);
+        console.log("filter(): ", dataFilter2);
+
+
+        // 04. some
+        // - 변수를 사용해 담을 수 있음
+        // - 조건에 맞는 값이 하나라도 있다면 true로 반환됨
+        let dataSome = names.some((item) => {
+            return item.startsWith("L");
+        })
+
+        let dataSome2 = names.some((item) => {
+            return item.startsWith("A");
+        })
+
+        console.log("some(): ", dataSome);
+        console.log("some(): ", dataSome2);
+
+
+        // 05. every
+        // - 변수를 사용해 담을 수 있음
+        // - 모든 값이 해당 조건에 일치하다면 true로 반환됨
+        let dataEvery = names.every((item) => {
+            return item.length > 0;
+        });
+
+        let dataEvery2 = names.every((item) => {
+            return item.startsWith("L");
+        });
+
+        console.log("every(): ", dataEvery);
+        console.log("every(): ", dataEvery2);
+
+
+        // 06. find
+        // - 변수를 사용해 담을 수 있음
+        // - 조건에 맞는 값을 반환하는 것은 filter와 같지만 filter는 배열을 find는 string 값을 반환함
+        // - 추가로 filter는 조건에 맞는 모든 값을 반환하지만 find는 조건에 맞는 첫번째 하나만 반환함
+        let dataFind = names.find((item) => {
+            return item.startsWith("L")
+        })
+
+        console.log("find(): ", dataFind);
+
+        
+        // 07. findIndex
+        // - 변수를 사용해 담을 수 있음
+        // - 조건에 맞는 값의 index를 반환함
+        let dataFindIndex = names.findIndex((item) => {
+            return item.startsWith("L");
+        })
+        
+        console.log("findIndex(): ", dataFindIndex);
+    </script>
+    <script src="./js/code_view.js"></script>
+</body>
+</html>

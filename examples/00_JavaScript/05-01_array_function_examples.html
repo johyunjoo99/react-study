@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 함수 예제</title>
+
+    <link rel="stylesheet" href="../../src/styles/css/style.css">
+</head>
+<body>
+    <div class="example">
+        <h1>05-01. 배열 함수 예제</h1>
+
+        <!-- 코드 출력 영역 -->
+        <pre class="example-code">
+            <code id="codeView"></code>
+        </pre>
+
+        <a href="./index.html" class="back">목록으로 이동<span>→</span></a>
+    </div>
+    <script id="exampleCode">
+        let names = [
+            "Steven Paul Jobs",
+            "Bill Gates",
+            "Mark Elliot Zuckerberg",
+            "Elon Musk",
+            "Jeff Bezos",
+            "Warren Edward Buffett",
+            "Larry Page",
+            "Larry Ellison",
+            "Tim Cook",
+            "Lloyd Blankfein",
+        ];
+
+        // 01. map
+
+        // 01-01. 모든 이름을 대문자로 바꾸어서 출력하시오.
+        const map01 = names.map((item) => {
+            const word = item.toUpperCase();
+            return word
+        });
+        console.log("01-01: ", map01);
+
+        // 01-02. 성을 제외한 이름만 출력하시오.
+        const map02 = names.map((item) => {
+            const word = item.split(" ");
+            return word[0]
+        })
+        console.log("01-02: ", map02);
+
+        // 01-03. 이름의 이니셜만 출력하시오.
+        const map03 = names.map((item) => {
+            const word = item.split(" ");
+            let initial = "";
+
+            word.forEach((letter) => {
+                initial += letter[0]
+            });
+
+            return initial
+        })
+        console.log("01-03: ", map03);
+
+
+        // 02. filter
+
+        // 02-01. 이름에 a를 포함한 사람들을 출력하시오.
+        const filter01 = names.filter((item) => {
+            return item.includes('a')
+        })
+        console.log("02-01: ", filter01);
+        
+        // 02-02. 이름에 같은 글자가 연속해서 들어간 사람을 출력하시오.
+        const filter02 = names.filter((item) => {
+            let split = item.split("");
+            return doubleLetter = split.some((letter, index) => letter == split[index + 1])
+        })
+        console.log("02-02: ", filter02);
+
+
+        // 03. some
+
+        // 03-01. 전체 이름의 길이가 20자 이상인 사람이 있는가?
+        const some01 = names.some((item) => {
+            return item.length >= 20
+        })
+        console.log("03-01: ", some01);
+
+        // 03-02. 성을 제외한 이름에 p를 포함한 사람이 있는가?
+        const some02 = names.some((item) => {
+            let split = item.split(" ");
+            split.pop();
+
+            return split.some((name) => name.toLocaleLowerCase().includes("p"))
+        })
+        console.log("03-02: ", some02);
+
+
+        // 04. every
+
+        // 04-01. 모두의 전체 이름의 길이가 20자 이상인가?
+        const every01 = names.every((item) => {
+            return item.length >= 20
+        })
+        console.log("04-01: ", every01);
+
+        // 04-02. 모두의 이름에 a가 포함되어 있는가?
+        const every02 = names.every((item) => {
+            return item.includes("a")
+        })
+        console.log("04-02: ", every02);
+
+        
+        // 05. find
+        
+        // 05-01. 전체 이름의 길이가 20자 이상인 사람을 찾으시오.
+        const find01 = names.find((item) => {
+            return item.length >= 20
+        })
+        console.log("05-01: ", find01);
+
+        // 05-02. 미들네임이 포함되어 있는 사람을 찾으시오.
+        const find02 = names.find((item) => {
+            const split = item.split(" ");
+            return split.length >= 3
+        })
+        console.log("05-02: ", find02);
+
+
+        // 06. findIndex
+
+        // 06-01. 전체 이름의 길이가 20자 이상인 사람의 인덱스 번호를 찾으시오.
+        const findIndex01 = names.findIndex((item) => {
+            return item.length >= 20
+        })
+        console.log("06-01: ", findIndex01);
+
+        // 06-02. 미들네임이 포함되어 있는 사람의 인덱스 번호를 찾으시오.
+        const findIndex02 = names.findIndex((item) => {
+            const split = item.split(" ");
+            return split.length >= 3
+        })
+        console.log("06-02: ", findIndex02);
+    </script>
+    <script src="./js/code_view.js"></script>
+</body>
+</html>

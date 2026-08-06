@@ -14,7 +14,7 @@ function TodoBoard(props){
                     item={item}
                     index={index} deleteItem={props.deleteItem}
                 />)
-                }
+            }
         </div>
     )
 }
