@@ -5,6 +5,9 @@ import './App.scss'
 function App() {
   return (
     <>
+      <main>
+        
+      </main>
     </>
   )
 }
