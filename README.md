@@ -53,3 +53,12 @@ React 개발에 필요한 JavaScript ES6+ 문법과 컴포넌트 기반 개발 �
 - find() / findIndex()를 이용한 데이터 검색
 - some() / every()를 이용한 조건 확인
 - 배열 함수를 활용한 실습 문제 풀이
+
+
+### 2026.08.14
+
+** React  useRef 학습 ***
+- useRef()를 이용한 값 저장 및 유지
+- .current를 이용한 ref 값 접근 및 변경
+- useState와 useRef의 값 변경 및 리렌더링 차이
+- DOM 요소 접근 이해를 위한 예제 구현

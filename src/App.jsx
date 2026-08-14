@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import '../src/styles/style.scss'
 import './App.scss'
 
