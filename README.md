@@ -62,3 +62,17 @@ React 개발에 필요한 JavaScript ES6+ 문법과 컴포넌트 기반 개발 �
 - .current를 이용한 ref 값 접근 및 변경
 - useState와 useRef의 값 변경 및 리렌더링 차이
 - DOM 요소 접근 이해를 위한 예제 구현
+
+
+### 2026.08.19
+
+** React Router를 이용한 페이지 라우팅 학습 **
+- react-router-dom 설치 및 기본 사용 방법
+- BrowserRouter를 이용한 Router 환경 구성
+- Routes / Route를 이용한 페이지별 라우팅 구현
+- Link를 이용한 페이지 이동 및 SPA 방식의 네비게이션 이해
+- URL 파라미터를 활용한 동적 라우팅 (/day/:day)
+- useParams()를 이용한 URL 파라미터 데이터 추출
+- JSON 데이터를 활용한 Day 목록 및 데이터 렌더링
+- filter()를 이용한 URL 파라미터에 해당하는 목록 추출
+- path="*"를 이용한 잘못된 경로 처리 및 404 페이지 구현
