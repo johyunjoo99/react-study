@@ -76,3 +76,25 @@ React 개발에 필요한 JavaScript ES6+ 문법과 컴포넌트 기반 개발 �
 - JSON 데이터를 활용한 Day 목록 및 데이터 렌더링
 - filter()를 이용한 URL 파라미터에 해당하는 목록 추출
 - path="*"를 이용한 잘못된 경로 처리 및 404 페이지 구현
+
+
+### 2026.08.20
+
+** React JSON Server 및 API 통신 학습 **
+- JSON Server 설치 및 실행 방법 학습
+- JSON 파일을 이용한 REST API 환경 구성
+- GET 요청을 이용한 데이터 조회
+- fetch()를 이용한 API 데이터 요청 및 처리
+- useEffect()를 활용한 API 데이터 호출
+- URL 쿼리 파라미터를 활용한 API 데이터 필터링 (?day=${day})
+- Custom Hook을 이용한 API 요청 로직 분리
+- useFetch() Hook을 생성하여 데이터 요청 및 재사용
+- useFetch()에 URL을 전달하여 여러 API에서 재사용
+- useEffect()의 의존성 배열을 활용한 URL 변경 감지
+- JSON Server의 Endpoint (/days, /words) 활용
+
+** React 단어장 프로젝트 구현 **
+- Day별 단어 데이터를 API에서 조회
+- Word 컴포넌트를 이용한 단어 데이터 분리 및 렌더링
+- useState()를 이용한 단어 뜻 보기/숨기기 기능 구현
+- useState()를 이용한 단어 암기 여부 상태 관리

@@ -63,20 +63,60 @@ header{
         border-top: 3px solid #111;
         text-align: center;
 
-        tr > *{
-            border: 1px solid #DDD;
-            border-left: none;
-            padding: 15px;
+        tr{
+            background: #FFF;
 
-            &:last-child{
-                border-right: none;
+            &.off{
+                background: #F2F2F2;
+
+                td{
+                    mix-blend-mode: luminosity;
+                }
+            }
+
+            > *{
+                border: 1px solid #DDD;
+                border-left: none;
+                padding: 10px 15px;
+
+                &:last-child{
+                    border-right: none;
+                }
+
+                &.s{
+                    width: 70px;
+                }
             }
         }
 
         th{
-            width: 80px;
-            background: #EEE;
             font-weight: 500;
+        }
+
+        .btns{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+            gap: 10px;
+
+            button{
+                background: blueviolet;
+                border: none;
+                border-radius: 5px;
+                font-size: 15px;
+                font-weight: 500;
+                color: #FFF;
+                padding: 9px 10px;
+
+                &.delete{
+                    background: #DFDFDF;
+                    color: #999;
+
+                    &:hover{
+                        background: #DDD;
+                        color: #666;
+                    }
+                }
+            }
         }
     }
 }
